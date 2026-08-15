@@ -419,7 +419,7 @@ body.exploring #toast{top:clamp(96px,12vh,140px)}
   <header id="topbar">
     <span id="brand">PLS Pros <i>·</i> AI Division</span>
     <span id="topright">
-      <span id="demochip" title="Click for details">Illustrative data</span>
+      <span id="demochip" title="Click for details">Sample data</span>
       <span id="eggcount" title="Easter eggs found — press F">0/6</span>
     </span>
   </header>
@@ -455,11 +455,17 @@ body.exploring #toast{top:clamp(96px,12vh,140px)}
   <aside id="infoPanel" class="panel">
     <h3>About the data</h3>
     <div class="sub">Press I to close</div>
-    <p><b>Every company name, client name and dollar figure in this walkthrough is
-    fictional.</b> They stand in for real records so the systems can be shown without
-    exposing PLS or client information.</p>
-    <p>What <em>is</em> real: the systems themselves — the pipelines, their schedules,
-    the platforms they run on, and the scope of what was built.</p>
+    <p><b>The boards and dashboards in this walkthrough are mockups.</b> They are
+    populated with sample data so the systems can be shown without displaying real
+    records. Every company name, client name, project name, job number and dollar
+    value on them is invented.</p>
+    <p><b>Where a figure is stated as fact, it is given as a rounded range</b> —
+    "100+ Pros", "25+ job sites", "several hundred thousand documents". Those
+    ranges are accurate. PLS's exact operating numbers are deliberately not shown.</p>
+    <p><b>What is real:</b> the systems and what they do, the schedules they run
+    on, the platforms they are built on, and how much was built — four automated
+    pipelines, eight data sources, five schools of training.</p>
+    <p>The purpose is to show how the work functions, not what it contains.</p>
     <p class="foot">Built by Aakash Shah · AI Intern, PLS Pros · February – August 2026 · now AI Implementation Specialist</p>
   </aside>
 
@@ -485,9 +491,10 @@ body.exploring #toast{top:clamp(96px,12vh,140px)}
     <button id="startBtn" type="button">Click to begin &rsaquo;</button>
     <div class="tiny">Safety &nbsp;·&nbsp; Family &nbsp;·&nbsp; Quality &nbsp;·&nbsp; Integrity</div>
     <div class="disclose">
-      All client names, project names and dollar figures shown in this walkthrough are
-      <strong>fictional stand-ins</strong>. No confidential PLS or client data is displayed.
-      The systems, schedules and platforms described are real.
+      <strong>The boards in this walkthrough are mockups populated with sample data.</strong>
+      Every client name, project name and dollar value on them is invented. Where a figure
+      is stated as fact it is given as a rounded range, never PLS's exact numbers.
+      The systems, their schedules, and the platforms they run on are real.
     </div>
     <div id="bootErr"></div>
   </div>
@@ -613,7 +620,7 @@ const STATIONS = [
     title:  'JSA Compliance: from manually calculated to daily at 11:00',
     body: [
       'It used to mean opening three systems every single day and reconciling them by hand — Bullhorn placements against VeriClock clock-ins against SafetyCulture JSAs — just to produce one compliance report.',
-      'Now one pipeline does it every morning across ~107 Pros and ~25 job sites, scores compliance, and names exactly which field leaders to call.'
+      'Now one pipeline does it every morning across 100+ Pros and 25+ job sites, scores compliance, and names exactly which field leaders to call.'
     ],
     extra: ['BEFORE: <b>by hand, daily</b>', 'AFTER: <b>11:00 AM, automated</b>'],
     fun: 'Work Safe. Work Strong. Now with receipts.'
@@ -638,7 +645,7 @@ const STATIONS = [
     kicker: 'STATION 04 · THE YARD',
     title:  'One Brain, Eight Pipelines',
     body: [
-      'Eight operational data sources wired into Claude, so leadership asks questions in plain English and gets answers in seconds — across a ~350,000-document SharePoint estate.',
+      'Eight operational data sources wired into Claude, so leadership asks questions in plain English and gets answers in seconds — across a SharePoint estate of several hundred thousand documents.',
       'No exports. No "can someone pull that for me." Ask the question, get the answer, with the source cited.'
     ],
     extra: ['<b>8</b> sources', '<b>~350k</b> documents', 'plain English'],
@@ -651,10 +658,10 @@ const STATIONS = [
     kicker: 'STATION 05 · PLS UNIVERSITY',
     title:  'PLSU — Five Schools, Built From Zero',
     body: [
-      '<b>There was no LMS.</b> PLSU is a real training platform on TalentLMS with Microsoft single sign-on — five schools, serving 150–200 Pros from L1 field professionals to directors.',
+      '<b>There was no LMS.</b> PLSU is a real training platform on TalentLMS with Microsoft single sign-on — five schools, serving 150+ Pros from L1 field professionals to directors.',
       'The School of Safety mirrors the PLS Health & Safety Manual section for section — each course a reading, video units, and a scenario quiz. Every course ships in English <em>and</em> Spanish.'
     ],
-    extra: ['<b>5</b> schools', '<b>23</b> safety courses', '<b>EN + ES</b>', 'Microsoft SSO'],
+    extra: ['<b>5</b> schools', '<b>20+</b> safety courses', '<b>EN + ES</b>', 'Microsoft SSO'],
     fun: 'The presenters are AI avatars of PLS leadership, produced end-to-end in HeyGen. Every course discloses it\'s AI. We wrote that policy too.'
   },
   {
@@ -688,7 +695,7 @@ const STATIONS = [
     kicker: 'PLS PROS · AI DIVISION',
     title:  'Build things that outlast the builder.',
     body: [
-      'Thank you to <b>John</b> and <b>Ryan</b>, to the office staff who answered every question, and to every <b>Pro in the field</b> — you handed an intern the keys to the site.'
+      'Thank you to <b>John</b>, <b>Ryan</b> and <b>Randy</b>, to the office staff who answered every question, and to every <b>Pro in the field</b> — you handed an intern the keys to the site.'
     ],
     extra: ['<b>Aakash Shah</b>', 'AI Intern &rarr; <b>AI Implementation Specialist</b>', 'PLS Pros · Feb – Aug 2026'],
     fun: 'Press E to explore the yard · F lists the easter eggs (there are 6).'
@@ -700,7 +707,7 @@ const STATIONS = [
    `after` may contain \n to break across two lines. */
 const SCORE = [
   ['JOBS GANTT',      'did not exist',      'DAILY · 7:00 AM',      'company forecast, built week one'],
-  ['JSA COMPLIANCE',  'by hand, every day', 'AUTOMATED · 11:00 AM', '~107 Pros × ~25 sites, scored daily'],
+  ['JSA COMPLIANCE',  'by hand, every day', 'AUTOMATED · 11:00 AM', '100+ Pros, 25+ sites, scored daily'],
   ['AM DASHBOARDS',   'did not exist',      'v1.7 · MON 3:00 AM',   'per manager, 7 versions in 6 months'],
   ['KNOWLEDGE HUB',   '8 data silos',       'ONE BRAIN',            'sources wired to Claude, plain English'],
   ['PLS UNIVERSITY',  'no LMS at all',      '5 SCHOOLS',            'built from zero, English + Spanish'],
@@ -1044,13 +1051,13 @@ function texGanttBoard() {
     c.fillStyle = C.cream; c.font = F(400, 50, HEAD);
     c.fillText('OPEN & PENDING PROJECTS', 34, 88);
     c.textAlign = 'right'; c.fillStyle = C.sageLt; c.font = F(400, 20);
-    c.fillText('NEXT 10 WEEKS · auto-generated daily', w - 34, 62);
+    c.fillText('SAMPLE VIEW · auto-generated daily', w - 34, 62);
     c.fillText('WORK SAFE. WORK STRONG.', w - 34, 92);
     c.textAlign = 'left';
 
     // KPI tiles
-    const tiles = [['97','TOTAL PROJECTS'],['49','OPEN'],['48','PENDING'],
-                   ['646','TOTAL OPENINGS'],['34','STARTING ≤ 30 DAYS']];
+    const tiles = [['112','TOTAL PROJECTS'],['58','OPEN'],['54','PENDING'],
+                   ['731','TOTAL OPENINGS'],['41','STARTING ≤ 30 DAYS']];
     const tw = (w - 68 - 4 * 12) / 5;
     tiles.forEach((t, i) => {
       const x = 34 + i * (tw + 12), y = 156;
@@ -1121,7 +1128,7 @@ function texGanttBoard() {
     c.fillStyle = '#8A8C84'; c.font = F(400, 15); c.textAlign = 'left';
     c.fillText('Source: Bullhorn → PLS Projects Tracker · auto-updated daily before 07:00', 34, h - 32);
     c.textAlign = 'right'; c.fillStyle = C.crimson; c.font = F(500, 15);
-    c.fillText('Illustrative data — client names fictional', w - 34, h - 32);
+    c.fillText('SAMPLE DATA — not a real report. Names and figures invented.', w - 34, h - 32);
   });
 }
 
@@ -1184,7 +1191,7 @@ function texJSA() {
     c.fillStyle = '#4A4C46'; c.font = F(500, 25);
     c.fillText('one pipeline · every morning', cx2, 348);
     // three stat pills
-    [['~107', 'PROS'], ['~25', 'JOB SITES'], ['0', 'MANUAL STEPS']].forEach((p, i) => {
+    [['100+', 'PROS'], ['25+', 'JOB SITES'], ['0', 'MANUAL STEPS']].forEach((p, i) => {
       const pw = (w - midX - 90) / 3, px = midX + 30 + i * pw;
       c.fillStyle = '#E4E7E1'; rr(c, px, 392, pw - 14, 104, 8); c.fill();
       c.fillStyle = C.crimson; c.font = F(400, 44, HEAD);
@@ -1238,14 +1245,14 @@ function texDashboard() {
     c.fillStyle = C.green; c.font = F(500, 21); c.fillText('● SENT MON 3:00 AM', w - 30, 88);
     c.textAlign = 'left';
     c.fillStyle = '#6C6E66'; c.font = F(500, 21);
-    c.fillText(FAKE.am + '  ·  week of August 3–9, 2026  ·  illustrative data', 30, 158);
+    c.fillText(FAKE.am + '  ·  SAMPLE DATA — not a real report. Names and figures invented.', 30, 158);
 
     // four KPI tiles
     const tiles = [
-      ['ACTIVITY SCORE', '493', '/ 250 pts', '▲ 372 vs last wk', C.green],
-      ['WORKING PROS',   '15',  'today',     '30-day forecast 14', C.crimson],
-      ['OPEN RFQs',      '104', '73 prospect · 31 active', '11 entered this week', C.charcoal],
-      ['ACTIVE ORDERS',  '5',   '4 verbal approvals', 'in production', C.gold]
+      ['ACTIVITY SCORE', '412', '/ 250 pts', '▲ 268 vs last wk', C.green],
+      ['WORKING PROS',   '22',  'today',     '30-day forecast 20', C.crimson],
+      ['OPEN RFQs',      '86',  '61 prospect · 25 active', '9 entered this week', C.charcoal],
+      ['ACTIVE ORDERS',  '7',   '5 verbal approvals', 'in production', C.gold]
     ];
     const tw = (w - 60 - 3 * 16) / 4;
     tiles.forEach((t, i) => {
@@ -1267,11 +1274,11 @@ function texDashboard() {
     c.fillStyle = C.ink; c.font = F(400, 30, HEAD); c.textAlign = 'left';
     c.fillText('MY PROSPECTING PIPELINE', 30, 462);
     c.fillStyle = '#6C6E66'; c.font = F(400, 19);
-    c.fillText('128 open prospect deals · six stages', 30, 496);
+    c.fillText('96 open prospect deals · six stages', 30, 496);
 
-    const stages = [['Qualified Prospect', 2], ['Initial Meeting', 53], ['Value Prop', 0],
-                    ['RFQ Received', 16], ['Estimate Submitted', 57], ['PO Received', 0]];
-    const maxV = 57, bx = 360, bw = w - bx - 60;
+    const stages = [['Qualified Prospect', 4], ['Initial Meeting', 38], ['Value Prop', 3],
+                    ['RFQ Received', 12], ['Estimate Submitted', 34], ['PO Received', 5]];
+    const maxV = 38, bx = 360, bw = w - bx - 60;
     stages.forEach((s, i) => {
       const y = 528 + i * 52;
       c.fillStyle = '#4A4C46'; c.font = F(500, 21); c.textAlign = 'right';
@@ -1419,12 +1426,12 @@ function texAskPoster() {
     c.fillStyle = C.green; c.font = F(400, 22, HEAD);
     c.fillText('ANSWERED IN SECONDS', 50, 972);
     c.fillStyle = '#8A8C84'; c.font = F(400, 20);
-    c.fillText('— across ~350,000 documents, no export required.', 50, 1010);
+    c.fillText('— across several hundred thousand documents, no export required.', 50, 1010);
 
     // footer
     c.fillStyle = C.charcoal; c.fillRect(0, h - 88, w, 88);
     c.fillStyle = C.sageLt; c.font = F(400, 19); c.textAlign = 'center';
-    c.fillText('Illustrative example. Site names fictional.', w / 2, h - 44);
+    c.fillText('Illustrative example — site names and figures are fictional.', w / 2, h - 44);
   });
 }
 
@@ -1441,7 +1448,7 @@ function texCourseBoard() {
 
     const schools = [
       ['THE CORE', '9 courses', 'company DNA, values, career path', C.crimson],
-      ['SCHOOL OF SAFETY', '23 courses', 'mirrors the PLS H&S Manual, section for section', C.charcoal],
+      ['SCHOOL OF SAFETY', '20+ courses', 'mirrors the PLS H&S Manual, section for section', C.charcoal],
       ['FIELD OPERATIONS', '12 courses · 3 tiers', 'jobsite execution', C.sage],
       ['THE FORGE ACADEMY', 'leadership', 'Crew Lead → Field PM', C.goldDk],
       ['OFFICE OPERATIONS', 'phase 2', 'office-side workflows', C.sage]
@@ -1722,7 +1729,7 @@ function texCredentials() {
     });
     c.textAlign = 'center';
     c.fillStyle = '#8A8C84'; c.font = F(400, 21);
-    c.fillText('Illustrative data throughout · no confidential PLS or client information', w / 2, h - 34);
+    c.fillText('All names and figures shown are fictional · no PLS or client data', w / 2, h - 34);
   });
 }
 
